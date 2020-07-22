@@ -14,8 +14,7 @@ loginBtn.addEventListener('click', function () {
 const depositBtn = document.getElementById('addDeposit');
 depositBtn.addEventListener('click', function () {
     const depositAmount = document.getElementById('depositAmount').value;
-    const depositNumber = parseFloat(depositAmount);
-    console.log(depositNumber);
+    const depositNumber = getInputNumber('depositAmount');
 
     updateSpanText('currentDeposit', depositNumber);
 
@@ -27,9 +26,16 @@ depositBtn.addEventListener('click', function () {
 // Withdraw button
 
 const withdrawBtn = document.getElementById('addWithdraw');
-withdrawBtn.addEventListener('click', function(){
-    console.log('kaj hoiche');
+withdrawBtn.addEventListener('click', function(id){
+    const withdrawNumber = getInputNumber(id);
+    console.log(withdrawNumber);
 })
+
+function getInputNumber(){
+    const amount = document.getElementById('withdrawAmount').value;
+    const amountNumber = parseFloat(amount);
+    return amountNumber;
+};
 
 function updateSpanText(id, depositNumber){
     const current = document.getElementById(id).innerText;
