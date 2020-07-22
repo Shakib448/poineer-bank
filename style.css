@@ -8,6 +8,45 @@ body {
     border-radius: 10px;
 }
 
-#transaction-area{
+#transaction-area {
     display: none;
+    padding: 5%;
+}
+
+.deposit{
+    background-color: slateblue;
+    padding: 5%;
+    margin: 0px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.withdraw{
+    background-color: lightsalmon;
+    padding: 5%;
+    margin: 0px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.balance{
+    background-color: orange;
+    padding: 5%;
+    margin: 0px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.Deposit{
+    padding: 10%;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 10px;
+    margin: 50px 0px;
+}
+
+.Withdraw{
+    padding: 10%;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 10px;
+    margin: 50px 0px;
 }

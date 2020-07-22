@@ -30,7 +30,48 @@
     </div>
 
     <div id="transaction-area">
-        <h1>Transaction Area</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="deposit">
+                        <h5><b>Deposit</b></h5>
+                        <h2><b>$<span id="currentDeposit">00</span></b></h2>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="withdraw">
+                        <h5><b>Withdraw</b></h5>
+                        <h2><b>$ 00</b></h2>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="balance">
+                        <h5><b>Balance</b></h5>
+                        <h2><b>$ <span id="currentBalance">1240</span></b></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="Deposit">
+                        <h2>Deposit</h2>
+                        <br>
+                        <input id="depositAmount" type="text" placeholder="$ amount of deposit" class="form-control">
+                        <br>
+                        <button id="addDeposit" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="Withdraw">
+                        <h2>Withdraw</h2>
+                        <br>
+                        <input id="withdrawAmount" type="text" placeholder="$ amount of withdraw" class="form-control">
+                        <br>
+                        <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="event.js"></script>

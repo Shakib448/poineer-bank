@@ -1,3 +1,5 @@
+// Login button 
+
 const loginBtn = document.getElementById('login');
 loginBtn.addEventListener('click', function () {
     const loginArea = document.getElementById('login-area');
@@ -5,4 +7,34 @@ loginBtn.addEventListener('click', function () {
     const transactionArea = document.getElementById('transaction-area');
     transactionArea.style.display = 'block';
 });
+
+
+// deposit button 
+
+const depositBtn = document.getElementById('addDeposit');
+depositBtn.addEventListener('click', function () {
+    const depositAmount = document.getElementById('depositAmount').value;
+    const depositNumber = parseFloat(depositAmount);
+    console.log(depositNumber);
+
+    updateSpanText('currentDeposit', depositNumber);
+
+    updateSpanText('currentBalance', depositNumber);
+
+    document.getElementById('depositAmount').value = "";
+})
+
+// Withdraw button
+
+const withdrawBtn = document.getElementById('addWithdraw');
+withdrawBtn.addEventListener('click', function(){
+    console.log('kaj hoiche');
+})
+
+function updateSpanText(id, depositNumber){
+    const current = document.getElementById(id).innerText;
+    const currentNumber = parseFloat(current);
+    const total = depositNumber + currentNumber;
+    document.getElementById(id).innerText = total;
+};
 
