@@ -1,1 +1,1 @@
-"# poineer-bank" 
+<img src="img/javascript-bank.png"/>
